@@ -1,10 +1,10 @@
-var apiKey = "";
+var apiKey = require('./../.env').apiKey;
 
 $(document).ready(function() {
-  $('#gitUsername').cllick(function() {
+  $('#gitUsername').click(function() {
+    click.preventDefault();
     var username = $('#username').val();
-    $('#username').val();
-    $
+    var output = getRepos(username);
 
-  })
-})
+  });
+});
